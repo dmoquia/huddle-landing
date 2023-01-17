@@ -9,9 +9,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: no-repeat, url("../images/bg-desktop.svg");
+  background: no-repeat, url("../images/bg-mobile.svg");
   background-size: cover;
   background-color: hsl(257deg, 40%, 49%);
+}
+@media screen and (min-width: 768px) {
+  body {
+    background: no-repeat, url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257deg, 40%, 49%);
+  }
 }
 
 header {
@@ -76,7 +83,7 @@ main {
 .banner-text .main-text {
   padding-bottom: 1em;
   font-weight: 400;
-  color: #dfd9d9;
+  color: #e9dcdc;
 }
 .banner-text a {
   text-decoration: none;
